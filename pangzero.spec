@@ -9,9 +9,9 @@ Source0:	http://dl.sourceforge.net/pangzero/%{name}-%{version}.tar.gz
 # Source0-md5:	eec0717ecbb1cf0a78211f2ef2ca688b
 Patch0:		%{name}-SDL.patch
 URL:		http://apocalypse.rulez.org/pangzero
-BuildRequires:	perl-SDL
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	perl-SDL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,6 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
-
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
