@@ -1,12 +1,12 @@
 Summary:	Pang Zero - clone of Super Pang
 Summary(pl):	Pang Zero - klon Super Panga
 Name:		pangzero
-Version:	0.13
+Version:	0.15
 Release:	1
 License:	GPL
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/pangzero/%{name}-%{version}.tar.gz
-# Source0-md5:	eec0717ecbb1cf0a78211f2ef2ca688b
+# Source0-md5:	3bf5ba7b5b794c68fa39b3f618941ddf
 Patch0:		%{name}-SDL.patch
 URL:		http://apocalypse.rulez.org/pangzero
 BuildRequires:	autoconf
