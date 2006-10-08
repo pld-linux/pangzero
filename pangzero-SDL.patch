@@ -1,6 +1,6 @@
---- pangzero-0.13/bin/pangzero	2006-08-21 21:15:51.000000000 +0200
-+++ pangzero-0.13/bin/pangzero~	2006-08-21 14:03:48.000000000 +0200
-@@ -2124,7 +2124,7 @@
+--- pangzero-0.15/bin/pangzero~	2006-10-08 00:34:28.000000000 +0200
++++ pangzero-0.15/bin/pangzero	2006-10-08 13:19:10.000000000 +0200
+@@ -2358,7 +2358,7 @@
    }
  
    $::music = new SDL::Music("$DataDir/UPiPang.mp3");
@@ -9,12 +9,12 @@
    &SetMusicEnabled($MusicEnabled);
  }
  
-@@ -2135,7 +2135,7 @@
+@@ -2369,7 +2369,7 @@
  }
  
  sub SetMusicEnabled {
--  return unless $::music and $::music->{-data};
-+  return unless $::music and $::music;
+-  return $MusicEnabled = 0 unless $::music and $::music->{-data};
++  return $MusicEnabled = 0 unless $::music and $::music;
    my $musicEnabled = shift;
  
    $MusicEnabled = $musicEnabled ? 1 : 0;
