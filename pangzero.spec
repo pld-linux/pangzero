@@ -1,13 +1,13 @@
 Summary:	Pang Zero - clone of Super Pang
 Summary(pl):	Pang Zero - klon Super Panga
 Name:		pangzero
-Version:	0.15
+Version:	0.16
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/pangzero/%{name}-%{version}.tar.gz
-# Source0-md5:	3bf5ba7b5b794c68fa39b3f618941ddf
-Patch0:		%{name}-SDL.patch
+# Source0-md5:	e573171210308cadf66671f4854bbdce
+Source1:	%{name}.desktop
 URL:		http://apocalypse.rulez.org/pangzero
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -15,14 +15,17 @@ BuildRequires:	perl-SDL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Pang Zero is a clone and enhancement of Super Pang.
+Pang Zero is a clone of Super Pang, a fast-paced action game that
+involves popping balloons with a harpoon. Currently, up to six people
+can play together.
 
 %description -l pl
-Pang Zero jest ulepszonym klonem Super Panga.
+Pang Zero jest klonem Super Panga, szypkiej gry akcji, w której gracz
+przebija balony za pomoc± harpuna. Aktualnie w grze mo¿e uczestniczyæ
+sze¶ciu graczy.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__aclocal}
@@ -34,9 +37,13 @@ Pang Zero jest ulepszonym klonem Super Panga.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install data/icon.png $RPM_BUILD_ROOT%{_pixmapsdir}/pangzero.png
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,3 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
+%{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/%{name}.png
