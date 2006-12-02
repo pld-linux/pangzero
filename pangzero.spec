@@ -20,7 +20,7 @@ involves popping balloons with a harpoon. Currently, up to six people
 can play together.
 
 %description -l pl
-Pang Zero jest klonem Super Panga, szypkiej gry akcji, w której gracz
+Pang Zero jest klonem Super Panga, szybkiej gry akcji, w której gracz
 przebija balony za pomoc± harpuna. Aktualnie w grze mo¿e uczestniczyæ
 sze¶ciu graczy.
 
