@@ -8,7 +8,7 @@ Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/pangzero/%{name}-%{version}.tar.gz
 # Source0-md5:	484250b9b7ba09639d191b80cc25ef7d
 Source1:	%{name}.desktop
-URL:		http://apocalypse.rulez.org/pangzero
+URL:		http://apocalypse.rulez.org/pangzero/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	perl-SDL
@@ -30,7 +30,6 @@ sze¶ciu graczy.
 %build
 %{__aclocal}
 %{__autoconf}
-#%%{__autoheader}
 %{__automake}
 %configure
 %{__make}
