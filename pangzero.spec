@@ -1,5 +1,5 @@
 Summary:	Pang Zero - clone of Super Pang
-Summary(pl):	Pang Zero - klon Super Panga
+Summary(pl.UTF-8):   Pang Zero - klon Super Panga
 Name:		pangzero
 Version:	1.1
 Release:	1
@@ -19,10 +19,10 @@ Pang Zero is a clone of Super Pang, a fast-paced action game that
 involves popping balloons with a harpoon. Currently, up to six people
 can play together.
 
-%description -l pl
-Pang Zero jest klonem Super Panga, szybkiej gry akcji, w której gracz
-przebija balony za pomoc± harpuna. Aktualnie w grze mo¿e uczestniczyæ
-sze¶ciu graczy.
+%description -l pl.UTF-8
+Pang Zero jest klonem Super Panga, szybkiej gry akcji, w ktÃ³rej gracz
+przebija balony za pomocÄ… harpuna. Aktualnie w grze moÅ¼e uczestniczyÄ‡
+szeÅ›ciu graczy.
 
 %prep
 %setup -q
