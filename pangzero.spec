@@ -1,5 +1,5 @@
 Summary:	Pang Zero - clone of Super Pang
-Summary(pl.UTF-8):   Pang Zero - klon Super Panga
+Summary(pl.UTF-8):	Pang Zero - klon Super Panga
 Name:		pangzero
 Version:	1.1
 Release:	1
